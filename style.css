@@ -74,3 +74,32 @@ img{
 #web-box-1,#web-box-2,#web-box-6{
     grid-column: span 3;
 }
+
+
+/* CSS For Grid Area Layout */
+
+.grid-header{
+    text-align: center;
+    margin: 0px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr;
+    grid-template-rows: 120px 130px 130px 120px;
+    gap: 15px;
+}
+.grid-box{
+    background-color:rgb(216, 186, 109);
+    border: 2px solid orangered;
+    border-radius: 8px;
+}
+#grid-box-1,#grid-box-6{
+    grid-column: span 3;
+}
+#grid-box-2,#grid-box-3{
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
