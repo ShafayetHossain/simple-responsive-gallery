@@ -52,3 +52,25 @@ img{
 #box-6,#box-7,#box-9,#box-10{
     background-color:tomato;
 }
+
+/* CSS Simple Web Layout */
+
+.web-header{
+    text-align: center;
+    margin: 0px;
+}
+.web-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 120px 70px 230px 120px;
+    gap: 15px;
+}
+.web-box{
+    background-color: gray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#web-box-1,#web-box-2,#web-box-6{
+    grid-column: span 3;
+}
